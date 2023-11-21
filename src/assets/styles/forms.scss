@@ -1,0 +1,91 @@
+@use "./variables.scss";
+
+#container{
+  height: variables.$alto-body;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    --s: 100px; /* control the size */
+    --c1: #000000;
+    --c2: #404141;
+    --c3: #a2a2a2;
+    background:
+      repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 180deg) 
+       calc(.5*var(--s)) calc(.5*var(--s)*0.577),
+      repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 180deg);
+    background-size: var(--s) calc(var(--s)*0.577);
+  }
+
+
+
+input, button, label{
+  font-size: 30px;
+}
+
+h1{
+  font-size: 32px;
+  margin: 10px;
+}
+
+.form-container{
+  max-width: 500px;
+  border-radius: 50px;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 0px 15px;
+  background-repeat: inherit;
+  text-align: center;
+}
+
+input, button{
+  border-radius: 4px;
+  padding: 15px 30px;
+  border: none;
+}
+
+input{
+  background-color: rgba(0, 0, 0, 0.05)
+}
+
+button{
+  background-color: variables.$color-principal-800;
+  color: variables.$color-texto-invertido;
+  cursor: pointer;
+  &[disabled]{
+    background-color: gray;
+    cursor:not-allowed;
+  }
+}
+
+a{
+  color:variables.$color-principal-900;
+}
+
+.error{
+  color: variables.$color-error;
+}
+
+.escondido{
+  display: none;
+}
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  }
+
+.form-container, form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form+p, form p{
+  text-align: center;
+}
+
+  

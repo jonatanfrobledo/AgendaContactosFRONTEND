@@ -1,0 +1,34 @@
+$alto-header: 100px;
+$alto-footer: 50px;
+$alto-body: calc( 100vh - $alto-header - $alto-footer);
+
+$color-principal-50: black;
+$color-principal-100: white;
+$color-principal-200: #e9e9e9;
+$color-principal-300: #d5d5d5;
+$color-principal-400: #d2d2d2;
+$color-principal-500: #7e7e7e;
+$color-principal-600: #676767;
+$color-principal-700: #454545;
+$color-principal-800: #282828;
+$color-principal-900: #000000;
+
+$color-acento-50: #f8f9fa;
+$color-acento-100: #e9ecef;
+$color-acento-200: #dee2e6;
+$color-acento-300: #ced4da;
+$color-acento-400: #adb5bd;
+$color-acento-500: #6c757d;
+$color-acento-600: #495057;
+$color-acento-700: #343a40;
+$color-acento-800: #212529;
+$color-acento-900: #000000;
+
+$color-error: red;
+
+$color-fondo: rgba(0, 0, 0, 0.756);
+$color-texto: rgb(36, 36, 36);
+$color-texto-invertido: rgb(254, 254, 254);
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;

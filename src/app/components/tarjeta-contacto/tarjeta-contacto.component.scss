@@ -1,0 +1,30 @@
+@use "./../../../assets/styles/variables.scss";
+
+.tarjeta-contacto{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    cursor: pointer;
+    align-items: center;
+    background-color: gainsboro;
+    &:hover{
+        background-color: grey;
+    }
+}
+@media (width < variables.$bp-mobile){
+  .tarjeta-contacto{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+#app-icono-contacto{
+  width: 10%;
+  margin: auto;
+}
+.contacto-name{
+  font-size: 25px;  
+}
+p{
+  font-size: xx-large;
+  margin-block: 3px;
+}

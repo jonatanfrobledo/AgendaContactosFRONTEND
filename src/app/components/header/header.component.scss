@@ -1,0 +1,42 @@
+@use "./../../../assets/styles/variables.scss";
+//-----TITULO----
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: whitesmoke;
+#logo {
+    height: 80px;
+    border-radius: 10PX;
+  }
+}
+.navigation-bar{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    > * {
+      justify-content: center;
+      font-size: large;
+      color: black;
+      line-height: 30px;
+      background-color: unset;
+      border: unset;
+      text-decoration: unset;
+      padding: 16px 12px;
+      cursor: pointer;
+      &:hover {
+        background-color: grey;
+      }
+    }
+}
+.active {
+  font-weight: bold;
+}
+
+@media (width < variables.$bp-mobile){
+  header #logo{
+    height: 40px;
+  }
+}

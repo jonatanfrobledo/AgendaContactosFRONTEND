@@ -1,0 +1,62 @@
+
+.global{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{//colocar 2 y 2 elementos en grid
+    width: 50vh;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 100%;
+    box-shadow: 0 0 17px 10px rgb(0,0,0,30%);
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    resize: both;
+    //transition: box-shadow 0.1s, transform 0.1s;
+}
+.login h3.title{
+    color: #45425A;
+}
+.login{
+    background: #fff;
+}
+
+.fil1{//centrar el circulo
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    clip-path: circle(30% at 0 0);
+    background: #45425A;
+}
+
+//inputs-colors
+
+.textinput{
+    color: black;
+    background: #b7b7b7;
+}
+.textinput input{
+    background: #000000;
+    
+}
+::placeholder{
+    color: #fff;
+}
+.logbtn{
+    background: #464646;
+}
+
+@media (min-width:768px){
+    }
+    .design{
+        display: block;
+}
+

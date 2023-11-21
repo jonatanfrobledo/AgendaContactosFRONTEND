@@ -1,6 +1,6 @@
-# AgendaContactosFRONTEND
+# 2023 Agenda Contactos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
 ## Development server
 
